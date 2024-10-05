@@ -6,6 +6,6 @@ _estack = 0x20018000;
 MEMORY
 {
 	FLASH ( rx )	: ORIGIN = 0x80000000, LENGTH = 512k
-	RAM ( rxw )		: ORIGIN = 0x20000000, LENGTH = 128k
+	RAM ( rxw )		: ORIGIN = 0x20000000, LENGTH = 96k
 }
 
