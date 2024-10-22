@@ -26,7 +26,6 @@ reset_handler:
 	
 	// Setup dummy values to look at in debugger
 	LDR		r7, =0xDEADBEEF
-	LDR		r2, =0xDEAD
 	MOVS	r0, #0
 
 	main_loop:
