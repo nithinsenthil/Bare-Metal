@@ -14,10 +14,6 @@ Reset_Handler:
 	// The '_estack' value is defined in our linker script
 	LDR		r0, =_estack
 	MOV		sp, r0
-	
-	// Setup dummy values to look at in debugger
-	LDR		r7, =0xDEADBEEF
-	MOVS	r0, #0
 
 	// Copy data from flash to RAM data init section.
     // R2 will store our progress along the sidata section.
