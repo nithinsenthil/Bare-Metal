@@ -20,7 +20,7 @@
 .section .vector_table,"a",%progbits
 vtable:
 	.word	_estack
-	.word	reset_handler
+	.word	Reset_Handler
 	.word	NMI_Handler
 	.word	HardFault_Handler
 	.word	MemManage_Handler
