@@ -160,6 +160,7 @@
 #endif
 
 #include "cmsis_compiler.h"               /* CMSIS compiler specific defines */
+#include "stm32l4xx.h"
 
 
 #ifdef __cplusplus

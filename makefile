@@ -35,6 +35,9 @@ CFLAGS += -fmessage-length=0
 # Reduces junk when compiling for bare-metal
 CFLAGS += --specs=nosys.specs
 
+# Compile with C11
+CFLAGS += -std=c11
+
 # Linker directives
 LSCRIPT = ./$(LD_SCRIPT)
 LFLAGS += -mcpu=$(MCU_SPEC)
