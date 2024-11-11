@@ -2,7 +2,7 @@
 
 
 /* Program entry point */
-ENTRY(reset_handler)
+ENTRY(Reset_Handler)
 
 
 /* Define the end of RAM and limit of stack memory */
@@ -73,8 +73,9 @@ SECTIONS {
   } >RAM
 
   /* Space set aside for the application's heap/stack. */
-  /* Used to help avoid errors by adding a buffer region to throw */
-  /* Linker errors for out of memory rather than runtime undefined behavior */
+  /* Used to help avoid errors by adding a buffer region to throw ... */
+  /* ...linker errors for "out of memory" rather than undefined... */
+  /* ...behavior during runtime */
   .dynamic_allocations :
   {
     . = ALIGN(4);
